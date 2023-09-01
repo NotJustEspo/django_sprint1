@@ -6,7 +6,7 @@
     <ul>
         <li>Место: {{ post.location }}</li>
         <li>Дата: {{ post.date }}</li>
-        <li>Категория: <a href="{% url 'blog:category_posts' post.id %}">{{ post.category }}</a></li>
-        <p>{{ post.text }}</p>
+        <li>Категория: <a href="{% url 'blog:category_posts' post.category %}">{{ post.category }}</a></li>
     </ul>
+    <p>{{ post.text|linebreaksbr }}</p>
 {% endblock %}
