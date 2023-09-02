@@ -44,7 +44,6 @@ posts = [
     },
 ]
 
-
 posts_id = {post['id']: post for post in posts}
 
 

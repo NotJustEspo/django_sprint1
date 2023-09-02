@@ -27,8 +27,6 @@
         <a href="{% url 'blog:post_detail' post.id %}">
           Читать полный текст
         </a>
-        {% if not forloop.last %}
-        {% endif %}
       </article>
     {% endfor %}
 {% endblock %}
